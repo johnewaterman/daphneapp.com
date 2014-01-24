@@ -1,160 +1,251 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
 * {
-  margin: 0;
-  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html, body { height: 100%; }
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
 
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: rgb(108, 85, 250);
+  color: #999;
+  font: normal 16px/1.5 "HelveticaNeue-Light", "Times New Roman", serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+img {
+  max-width: 100%;
 }
 
-.posts li {
-  line-height: 1.75em;
-}
-
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.header a {
-  font-weight: bold;
+a {
+  color: #507998;
   text-decoration: none;
+  text-shadow: none;
+  /* hiding this to help with the app button
+      border-bottom: 1px dotted;*/
+  -webkit-box-sizing: padding-box;
+     -moz-box-sizing: padding-box;
+          box-sizing: padding-box;
 }
 
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
+
+a:hover {
+  color: #24577e;
+  /* border-bottom: 1px solid; */
 }
 
-.title a {
-  color: #a00;
+.app-store,
+.app-store:hover {
+  border-bottom: 0;
 }
 
-.title a:hover {
-  color: #000;
+h1, h2, h3, h4 {
+  font-family: "HelveticaNeue-CondensedBold", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
 }
 
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
+h1 {
+  color: rgb(241,241,241);
+  font-size: 2.25em;
+  text-shadow: none;
+}
+ h5 {font-size: 1.25em;
+    color:#FF5648;}
+
+/* basic layout */
+#container {
+  width: 100%;
+  max-width: 73em;
+  padding: 0 5%;
+  margin: 0 auto;
+  background: rgb(108, 85, 250);
 }
 
-.header a.extra:hover {
-  color: #000;
+header {
+  position: relative;
+  padding: 1.5em 0;
+  background: rgb(108, 85, 250);
 }
 
-.meta {
-  color: #aaa;
+header h1 {
+  margin: 0;
+  font-family: "HelveticaNeue-CondensedBold", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
 }
 
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
+header h2 {
+  margin: -0.7em 0 0;
+  font-size: 1.25rem;
 }
 
-.footer .contact {
+header h1 {
+  line-height: 1.375;
+}
+
+header h2 {
+  margin: -0.7em 0 0;
+  font-size: 1.25rem;
+  color: rgb(241,241,241);
+}
+
+header img {
+  margin-right: 0.5em;
   float: left;
-  margin-right: 3em;
 }
 
-.footer .contact a {
-  color: #8085C1;
+#main h1 {
+  line-height: 1.1;
+  font-size: 2.25em;
+  width: 92%;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.04em;
+  color: rgb(241,241,241);
 }
 
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
+.iphone {
+  position: relative;
+  max-width: 744px;
+  max-height: 396px;
+  padding-bottom: 0%;
 }
 
-.footer .rss img {
+.iphone img {
+  position: relative;
+  max-width: 80%;
+  z-index: 100;
+}
+
+.buy {
+  margin: 2em 0 -40.2em;
+  padding: 0.75em;
+  -webkit-border-radius: 0.375em;
+     -moz-border-radius: 0.375em;
+          border-radius: 0.375em;
+  -webkit-background-clip: padding-box;
+}
+
+.social_buttons {
+  display:inline;
+  position: relative;
+  left:65%;
+  width:33%;
+  bottom: 16%;
+}
+
+.social_buttons img{
+  background: rgb(108, 85, 250);
+  display: inline-block;
+  padding: 1.5px;
+  border-radius: 11px;
+  }
+
+.appbutton img{
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.button {
+  padding: 0.75em;
+  color: #ddd;
   border: 0;
+  background-color: #FD872D; 
+  font-family: "HelveticaNeue-CondensedBold", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  -webkit-border-radius: 0.375em;
+     -moz-border-radius: 0.375em;
+          border-radius: 0.375em;
+  -webkit-background-clip: padding-box;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+.button:hover {
+  background: rgb(241,241,241);
+  border: 0;
+  color: rgb(99, 82, 163);
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
+.button:active {
+  background: #1a3e59;
 }
 
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
+footer {
+  padding: 1em 0;
+  font-size: 0.75rem;
 }
 
-.post pre code {
-  border: none;
+@media all and (min-width: 37.5em) {
+  body {
+    font-size: 16px;
+  }
+  
+  #container {
+    max-width: 64em;
+  }
+  
+  #main {
+    position: relative;
+    width: 55%;
+    margin-left:45%;
+    min-height: 47em;
+  }
+  
+  #main h1 {
+    font-size: 3.25em;
+    width: 90%;
+    margin-bottom: 0.5em;
+  }
+  
+  .valueprop {
+    font-size: 1.25em;
+    color: rgb(241,241,241);
+  }
+  
+  aside {
+    width: 75%;
+    margin-left: -83%;
+    position: absolute;
+    top: 0em;
+  }
+  
+  .iphone img {
+    max-width: 100%;
+  }
+  
+  .iphone {
+    width: 100%;
+    height: 100%;
+  }
+  
+  header h1 {
+    line-height: 1.375;
+  }
+  
+  header h2 {
+    margin: -0.7em 0 0;
+    font-size: 1.25rem;
+    color: rgb(241,241,241);
+  }
 }
 
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
+em {
+  font-size: 120%;
 }
 
-.post pre.terminal code {
-  background-color: #333;
+.copyright {
+  text-align: center;
+  color: rgb(241, 241, 241);
+  padding-bottom: 1em;
+}
+
+.copyright a {
+  color: rgb(195, 195, 195);
 }

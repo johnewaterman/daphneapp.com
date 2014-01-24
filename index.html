@@ -1,13 +1,68 @@
----
-layout: default
-title: Your New Jekyll Site
----
+<!doctype html>
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Daphne App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="https://itunes.apple.com/app/shares/id495399233?partnerId=30&amp;siteID=gCug0Bwa2R0"> <img src="./images/icon_57.png" alt="Fred Icon" /> </a>
+            <hgroup>
+                <h1>Daphne</h1>
+                <h2>You're busy. Set reminders. Stay on track.</h2>
+            </hgroup>
+        </header>
+        <section id="main" role="main">
+            <h1>The easiest way to manage a busy schedule!</h1>
+            <aside>
+                <div class="iphone">
+                    <img src="http://assets.getsharesapp.com/images/screenshot01.png" alt="" />
+                </div>
+            </aside>
+            <p class="valueprop"> Hi, I'm Daphne. I want to be your personal assistant, so that you can stay on top of the things that are important to you. All you have to do is tell me when to send you a reminder, and I'll handle the rest. So, for example, you can ask me to remind you to call your mom Friday at 8pm. I'll alert you around 8, so you don't forget. <em><strong> It's that easy.</strong></em></p></p>
+
+            <p class="buy"><a href="https://itunes.apple.com/app/shares/id495399233?partnerId=30&amp;siteID=gCug0Bwa2R0" target="_blank"><img src="images/appstore.png" alt="iTunes Store Button"></a> 
+
+            <ul class="social_buttons">        
+                <li="facebook">
+                    <a href="" target="_self">
+                     <img src="images/facebook.png" alt="Facebook Link">
+                    </a>
+                </li>    
+                <li="twitter">
+                    <a href="" target="_self">
+                     <img src="images/twitter.png" alt="Twitter Link">
+                    </a>
+                </li>
+                <li="linkedin">
+                    <a href="" target="_self">
+                    <img src="images/linkedin.png" alt="LinkedIn Link">
+                    </a>
+                </li>
+                <li="Email">
+                    <a href="" target="_self">
+                    <img src="images/email.png" alt="email Link">
+                    </a>
+                </li>
+            </ul>
+            </p>
+
+
+            <!--
+            <p class="buy"><a href="https://itunes.apple.com/app/shares/id495399233?partnerId=30&amp;siteID=gCug0Bwa2R0" class="button" target="_blank">Download Fred Now> </a></p> !-->
+        </section>
+
+        <p class="copyright">
+            &copy;2013 — Brought to you by <a href="http://scottpet.it" rel="external nofollow" target="_blank">Scott Petit</a>
+        </p>
+        </footer>
+    </div>
+</body>
+
+</html>
